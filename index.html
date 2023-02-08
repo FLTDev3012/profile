@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900">
+  <link rel="stylesheet" href="style.css">
+  <title>My profile</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">ProfilHub<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <li><a href="#follow" onclick="toggleMenu();">Following</a></li>
+    </ul>
+  </header>
+  <section class="main" id="home">
+    <div class="container">
+      <div id="introduction" class="card-white">
+          <h1>Hello, I'm Dorian 😎</h1>
+          <img src="images/312468372_869925424444534_1703913166552788396_n.jpg" alt="image_de_profil" width="100px" height="100px" class="img-circle">
+          <p>❤ We like sex and experiments! Here we will show you our secrets ;) Please, If you love our videos, like and post comments and subscribe for our page! It encourages us to shoot new videos ❤ Our second channel: FLTDev. ❤</p>
+          <a href="#" class="btn-blue">Discover All Videos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" id="follow">
+    <div class="card-white">
+      <h2>🥵 Follow me on <span class="only"><a href="https://onlyfans.com/" target="_blank">OnlyFans</a></span>. 🥵</h2>
+      <ul class="list-inline">
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://fr.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <section class="card-white" id="contact">
+      <div class="title">
+          <h2 class="titleText"><span>C</span>ontact Us</h2>
+          <p>For more contact with us, you can join us here.</p>
+      </div>
+      <div class="contactForm">
+          <h3>Send Message</h3>
+          <div class="inputBox">
+              <input type="text" placeholder="Name">
+          </div>
+          <div class="inputBox">
+              <input type="text" placeholder="Email">
+          </div>
+          <div class="inputBox">
+              <textarea placeholder="TextArea"></textarea>
+          </div>
+          <div class="inputBox">
+              <input type="submit" value="Send">
+          </div>
+      </div>
+  </section>
+
+
+
+  <div class="copyrightText">
+      <p>Copyright 2022 <a href="https://fltd.compteweb.com">FLTD</a>. All right Reserved</p>
+  </div>
+  </section>
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+
+</script>
+</body>
+</html>
